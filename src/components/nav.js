@@ -4,13 +4,16 @@ export default class Nav extends Component {
     render() {
         return (
             <nav>
-                <h1>ANNAH ISENBERG</h1>
+                <h2>AI</h2>
                 <ul>
-                    <li>ABOUT ME</li>
-                    <li>PORTFOLIO</li>
-                    <li>CONTACT</li>
+                    <li><a href="#">ABOUT ME</a></li>
+                    <li><a href="#">SKILLS</a></li>
+                    <li><a href="#">PORTFOLIO</a></li>
+                    <li><a href="#">CONTACT</a></li>
                 </ul>
             </nav>
         )
     }
 }
+
+// document.getElementById('youridhere').scrollIntoView();

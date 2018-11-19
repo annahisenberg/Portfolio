@@ -6,7 +6,7 @@ export default function Portfolio() {
         <section>
             <h2>PORTFOLIO</h2>
             <section>
-                <h3>Living With Annah - Personal Blog</h3>
+                <h2>Living With Annah - Personal Blog</h2>
                 <img src={Blog} alt="" />
                 <p>Living With Annah is a personal lifestyle blog I created for myself. I use it to blog about my daily life.</p>
                 <button>Live Demo</button>
@@ -21,7 +21,7 @@ export default function Portfolio() {
                 </ul>
             </section>
             <section>
-                <h3>The Foodie Diaries</h3>
+                <h2>The Foodie Diaries</h2>
                 <img src="#" alt="" />
                 <p>The Foodie Diaries is a food blog that lets you keep track of what you eat every day.</p>
                 <button><a href="https://immense-ridge-55909.herokuapp.com/api/Home">Live Demo</a></button>
@@ -39,7 +39,7 @@ export default function Portfolio() {
                 </ul>
             </section>
             <section>
-                <h3>Animal Shelter Finder</h3>
+                <h2>Animal Shelter Finder</h2>
                 <img src="#" alt="" />
                 <p>I used Petfinder's API to display a list of animal shelters in the zip code the user types in.</p>
                 <button><a href="https://annahisenberg.github.io/Animal-shelter-finder/">Live Demo</a></button>

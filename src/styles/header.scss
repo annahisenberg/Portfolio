@@ -1,0 +1,30 @@
+canvas {
+    // border: 1px solid black;
+    // background: linear-gradient(45deg, #462277, #5C37D4);
+    background: #1f083e;
+    background: radial-gradient(#2b0c3c, #130033);
+}
+
+h1 {
+    position: absolute;
+    font-size: 50px;
+    left: 500px;
+    top: 300px;
+    color: white;
+    z-index: 1;
+    font-family: $header-font;
+    text-shadow: -1px -1px 9px #8e8e8e;
+}
+
+h3 {
+    position: absolute;
+    font-size: 50px;
+    left: 558px;
+    top: 353px;
+    color: white;
+    z-index: 1;
+    font-family: $header-font;
+    text-shadow: -1px -1px 9px #8e8e8e;
+    font-weight: 100;
+    font-size: 2rem;
+}
