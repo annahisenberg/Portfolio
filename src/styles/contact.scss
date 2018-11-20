@@ -1,0 +1,22 @@
+#contact {
+    margin-top: 14%;
+    h2 {
+        color: white;
+        font-weight: 100;
+    }
+    p {
+        color: white;
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        width: 118vw;
+        height: 17rem;
+        background: -webkit-linear-gradient(to right, #56246a, #894a87);
+        background: linear-gradient(to right, #56246a, #894a87);
+        z-index: -9999;
+        -webkit-transform: rotate(5deg);
+        transform: rotate(5deg);
+        left: -10%;
+    }
+}

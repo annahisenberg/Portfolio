@@ -1,8 +1,7 @@
 canvas {
-    // border: 1px solid black;
-    // background: linear-gradient(45deg, #462277, #5C37D4);
     background: #1f083e;
-    background: radial-gradient(#2b0c3c, #130033);
+    background: radial-gradient(#41135a, #130033); //#41135a
+    margin-top: 6%;
 }
 
 h1 {
@@ -13,7 +12,6 @@ h1 {
     color: white;
     z-index: 1;
     font-family: $header-font;
-    text-shadow: -1px -1px 9px #8e8e8e;
 }
 
 h3 {
@@ -24,7 +22,6 @@ h3 {
     color: white;
     z-index: 1;
     font-family: $header-font;
-    text-shadow: -1px -1px 9px #8e8e8e;
     font-weight: 100;
     font-size: 2rem;
 }

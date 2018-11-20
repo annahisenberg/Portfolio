@@ -1,61 +1,57 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Blog from '../pictures/Screen Shot 2018-11-16 at 3.12.37 PM.png';
+import Lightbox from './lightbox';
 
-export default function Portfolio() {
-    return (
-        <section>
-            <h2>PORTFOLIO</h2>
-            <section>
-                <h2>Living With Annah - Personal Blog</h2>
-                <img src={Blog} alt="" />
-                <p>Living With Annah is a personal lifestyle blog I created for myself. I use it to blog about my daily life.</p>
-                <button>Live Demo</button>
-                <button><a href="https://github.com/annahisenberg/react-capstone-client">Source Code</a></button>
-                <p>Made with:</p>
-                <ul>
-                    <li>React</li>
-                    <li>NodeJS</li>
-                    <li>Express</li>
-                    <li>MongoDB</li>
-                    <li>SCSS</li>
-                </ul>
+export default class Portfolio extends Component {
+    constructor() {
+        super();
+        this.state = {
+            showLightbox: false
+        }
+    }
+    showLightbox() {
+        console.log('show lightbox');
+
+        this.setState({
+            showLightbox: true
+        })
+    }
+
+    render() {
+        return (
+            <section id="portfolio">
+                <h2>PORTFOLIO</h2>
+                {this.state.showLightbox === true ? <Lightbox /> : null}
+                <div>
+                    <section className="card" onClick={() => this.showLightbox()}>
+                        <img src={Blog} alt="" />
+                        <div class="overlay"></div>
+                        <div className="container">
+                            <p>Living With Annah - A Personal Blog</p>
+                            {/* <button>Live Demo</button>
+                        <button><a href="https://github.com/annahisenberg/react-capstone-client">Source Code</a></button> */}
+                        </div>
+                    </section>
+                    <section className="card">
+                        <img src={Blog} alt="" />
+                        <div class="overlay"></div>
+                        <div className="container">
+                            <p>The Foodie Diaries</p>
+                        </div>
+                        {/* <button><a href="https://immense-ridge-55909.herokuapp.com/api/Home">Live Demo</a></button> */}
+                        {/* <button><a href="https://github.com/annahisenberg/food-diary-node">Source Code</a></button> */}
+                    </section>
+                    <section className="card">
+                        <img src={Blog} alt="" />
+                        <div class="overlay"></div>
+                        <div className="container">
+                            <p>Animal Shelter Finder</p>
+                        </div>
+                        {/* <button><a href="https://annahisenberg.github.io/Animal-shelter-finder/">Live Demo</a></button> */}
+                        {/* <button><a href="https://github.com/annahisenberg/Animal-shelter-finder">Source Code</a></button> */}
+                    </section>
+                </div>
             </section>
-            <section>
-                <h2>The Foodie Diaries</h2>
-                <img src="#" alt="" />
-                <p>The Foodie Diaries is a food blog that lets you keep track of what you eat every day.</p>
-                <button><a href="https://immense-ridge-55909.herokuapp.com/api/Home">Live Demo</a></button>
-                <button><a href="https://github.com/annahisenberg/food-diary-node">Source Code</a></button>
-                <p>Made With:</p>
-                <ul>
-                    <li>JavaScript</li>
-                    <li>NodeJS</li>
-                    <li>Express</li>
-                    <li>MongoDB</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>jQuery</li>
-                    <li>Heroku</li>
-                </ul>
-            </section>
-            <section>
-                <h2>Animal Shelter Finder</h2>
-                <img src="#" alt="" />
-                <p>I used Petfinder's API to display a list of animal shelters in the zip code the user types in.</p>
-                <button><a href="https://annahisenberg.github.io/Animal-shelter-finder/">Live Demo</a></button>
-                <button><a href="https://github.com/annahisenberg/Animal-shelter-finder">Source Code</a></button>
-                <p>Made With:</p>
-                <ul>
-                    <li>JavaScript</li>
-                    <li>NodeJS</li>
-                    <li>Express</li>
-                    <li>MongoDB</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>jQuery</li>
-                    <li>Heroku</li>
-                </ul>
-            </section>
-        </section>
-    )
+        )
+    }
 }

@@ -1,3 +1,28 @@
+#skills {
+    h2 {
+        text-align: center;
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        width: 118vw;
+        height: 17rem;
+        background: linear-gradient(to right, #78f0d2, #84b5da);
+        z-index: -9999;
+        transform: rotate(-5deg);
+        left: -10%;
+    }
+    div {
+        display: flex;
+        .skill-item {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            background: white;
+            padding: 0.5rem;
+            border-radius: 1rem;
+        }
+    }
+}
+
 h2 {
     font-family: $header-font;
 }

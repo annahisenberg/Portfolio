@@ -1,10 +1,29 @@
 nav {
     display: flex;
+    position: fixed;
+    background: white;
+    width: 100%;
+    z-index: 9999;
+    h2 {
+        position: relative;
+        font-family: 'Dancing Script', cursive;
+        left: 1%;
+        font-size: 2.2rem;
+        transform: rotate;
+        transform: rotate;
+        transform: rotate(-30deg);
+        span {
+            position: absolute;
+            top: 16%;
+        }
+    }
     ul {
         display: flex;
         list-style-type: none;
+        justify-content: flex-end;
         li {
             margin-right: 10px;
+            cursor: pointer;
         }
     }
 }
