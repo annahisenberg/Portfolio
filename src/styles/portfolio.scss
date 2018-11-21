@@ -2,6 +2,7 @@
     margin-top: 14%;
     h2 {
         text-align: center;
+        color: $magenta;
     }
     div {
         display: flex;
@@ -13,6 +14,11 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 26%;
     position: relative;
+    button {
+        position: absolute;
+        bottom: 84px;
+        left: 138px;
+    }
     img {
         max-width: 100%;
         cursor: pointer;

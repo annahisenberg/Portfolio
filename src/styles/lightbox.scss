@@ -1,8 +1,8 @@
 #lightbox {
-    background: linear-gradient($lighter-purple, $darker-purple);
+    background: rgba(65, 19, 90, 0.9);
     color: white;
     position: fixed;
-    z-index: 1;
+    z-index: 9999;
     padding-top: 100px;
     left: 0;
     top: 0;
@@ -15,35 +15,42 @@
     }
     span {
         color: $darker-purple;
+        font-size: 15px;
         cursor: pointer;
-        margin-left: 10px;
+        position: relative;
+        left: 29%;
+        -webkit-transition: 0.3s ease;
+        transition: 0.3s ease;
+        &:hover {
+            background: $darker-purple;
+            color: white;
+        }
     }
     #lightbox-content {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        text-align: center;
         position: relative;
         background-color: #fefefe;
         margin: auto;
+        margin-bottom: 12rem;
         padding: 0;
         width: 90%;
         max-width: 1200px;
         color: $dark-gray;
         border-radius: 0.5rem;
-        ul {
-            display: flex;
-            li {
-                list-style-type: none;
-            }
-        }
         button {
             background: $orange;
             border-radius: 1rem;
             font-size: 15px;
             padding: 0.5%;
             border: none;
-            transition: all 0.3s ease;
+            // transition: all 0.3s ease;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s linear;
+            position: relative;
             &:hover {
                 background: $darker-orange;
+                transform: translatey(2px);
             }
             a {
                 text-decoration: none;

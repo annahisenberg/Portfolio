@@ -5,8 +5,13 @@
     }
     img {
         border-radius: 50%;
+        width: 25%;
+        height: 25%;
     }
     div {
         margin-left: 4rem;
+        h2 {
+            color: $magenta;
+        }
     }
 }

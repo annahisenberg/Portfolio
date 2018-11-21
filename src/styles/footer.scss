@@ -1,5 +1,6 @@
 footer {
-    background: #6f6e6e;
+    margin-top: 6%;
+    background: $footer-gray;
     color: white;
     left: 0;
     right: 0;
@@ -7,6 +8,39 @@ footer {
     bottom: 0;
     display: inline-block;
     width: 100%;
+    ul {
+        display: flex;
+        color: white;
+        justify-content: center;
+        li {
+            list-style-type: none;
+            margin-right: 0.5%;
+            &:first-child {
+                margin-right: 1%;
+            }
+            &:nth-child(3) {
+                a {
+                    transition: all 0.3s ease;
+                    &:hover {
+                        color: $linkedin-blue;
+                    }
+                }
+            }
+            &:nth-child(4) {
+                a {
+                    transition: all 0.3s ease;
+                    &:hover {
+                        color: $github-black;
+                    }
+                }
+            }
+            a {
+                &:visited {
+                    color: white;
+                }
+            }
+        }
+    }
     p {
         text-align: center;
         font-size: 15px;

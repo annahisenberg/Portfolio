@@ -1,12 +1,13 @@
 #skills {
     h2 {
         text-align: center;
+        color: white;
     }
     &:before {
         content: '';
         position: absolute;
         width: 118vw;
-        height: 17rem;
+        height: 25rem;
         background: linear-gradient(to right, #78f0d2, #84b5da);
         z-index: -9999;
         transform: rotate(-5deg);
@@ -15,6 +16,7 @@
     div {
         @include desktop {
             display: flex;
+            justify-content: space-evenly
         }
         .skill-item {
             @include desktop {
@@ -29,4 +31,8 @@
 
 h2 {
     font-family: $header-font;
+}
+
+svg {
+    width: 7%;
 }

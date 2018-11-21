@@ -13,10 +13,6 @@ export default class Nav extends Component {
         document.getElementById('portfolio').scrollIntoView({ behavior: 'smooth' });
     }
 
-    scrollToContact() {
-        document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
-    }
-
     render() {
         return (
             <nav>
@@ -25,7 +21,6 @@ export default class Nav extends Component {
                     <li onClick={() => this.scrollToAbout()}>ABOUT ME</li>
                     <li onClick={() => this.scrollToSkills()}>SKILLS</li>
                     <li onClick={() => this.scrollToPortfolio()}>PORTFOLIO</li>
-                    <li onClick={() => this.scrollToContact()}>CONTACT</li>
                 </ul>
             </nav>
         )

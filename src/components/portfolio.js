@@ -6,7 +6,8 @@ export default class Portfolio extends Component {
     constructor() {
         super();
         this.state = {
-            showLightbox: false
+            showLightbox: false,
+            isHovering: false
         }
     }
     showLightbox() {
@@ -21,19 +22,31 @@ export default class Portfolio extends Component {
         })
     }
 
+    handleMouseHover() {
+        this.setState(this.toggleHoverState);
+    }
+
+    toggleHoverState(state) {
+        return {
+            isHovering: !state.isHovering
+        }
+    }
+
     render() {
         return (
             <section id="portfolio">
                 <h2>PORTFOLIO</h2>
                 {this.state.showLightbox === true ? <Lightbox onClick={() => this.closeLightbox()} /> : null}
                 <div>
-                    <section className="card" onClick={() => this.showLightbox()}>
+                    <section
+                        className="card"
+                        onClick={() => this.showLightbox()}
+                        onMouseEnter={() => this.handleMouseHover()}
+                        onMouseLeave={() => this.handleMouseHover()}
+                    >
                         <img src={Blog} alt="" />
                         <div class="overlay"></div>
-                        {/* <div className="container">
-                            <p>Living With Annah - A Personal Blog</p>
-
-                        </div> */}
+                        {this.state.isHovering && <button>View Project</button>}
                     </section>
                     <section className="card">
                         <img src={Blog} alt="" />
