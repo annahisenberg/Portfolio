@@ -1,9 +1,13 @@
 nav {
     display: flex;
-    position: fixed;
+    position: sticky;
+    top: 0;
     background: white;
-    width: 100%;
     z-index: 9999;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3rem;
+    height: 4rem;
     h2 {
         position: relative;
         font-family: 'Dancing Script', cursive;

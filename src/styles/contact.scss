@@ -1,5 +1,17 @@
 #contact {
     margin-top: 14%;
+    ul {
+        display: flex;
+        color: white;
+        li {
+            list-style-type: none;
+            a {
+                &:visited {
+                    color: white;
+                }
+            }
+        }
+    }
     h2 {
         color: white;
         font-weight: 100;

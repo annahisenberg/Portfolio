@@ -13,11 +13,15 @@
         left: -10%;
     }
     div {
-        display: flex;
+        @include desktop {
+            display: flex;
+        }
         .skill-item {
+            @include desktop {
+                padding: 0.5rem;
+            }
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
             background: white;
-            padding: 0.5rem;
             border-radius: 1rem;
         }
     }

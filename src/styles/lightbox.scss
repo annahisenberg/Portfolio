@@ -1,7 +1,6 @@
 #lightbox {
-    background: darkgray;
+    background: linear-gradient($lighter-purple, $darker-purple);
     color: white;
-    // display: none;
     position: fixed;
     z-index: 1;
     padding-top: 100px;
@@ -10,4 +9,45 @@
     width: 100%;
     height: 100%;
     overflow: auto;
+    h2,
+    h4 {
+        color: $orange;
+    }
+    span {
+        color: $darker-purple;
+        cursor: pointer;
+        margin-left: 10px;
+    }
+    #lightbox-content {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 0;
+        width: 90%;
+        max-width: 1200px;
+        color: $dark-gray;
+        border-radius: 0.5rem;
+        ul {
+            display: flex;
+            li {
+                list-style-type: none;
+            }
+        }
+        button {
+            background: $orange;
+            border-radius: 1rem;
+            font-size: 15px;
+            padding: 0.5%;
+            border: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            &:hover {
+                background: $darker-orange;
+            }
+            a {
+                text-decoration: none;
+            }
+        }
+    }
 }
