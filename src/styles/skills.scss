@@ -14,10 +14,10 @@
         left: -10%;
     }
     div {
-        @include desktop {
-            display: flex;
-            justify-content: space-evenly
-        }
+        // @include desktop {
+        // }
+        display: flex;
+        justify-content: space-evenly;
         .skill-item {
             @include desktop {
                 padding: 0.5rem;

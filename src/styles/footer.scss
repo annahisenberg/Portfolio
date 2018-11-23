@@ -1,6 +1,7 @@
 footer {
     margin-top: 6%;
-    background: $footer-gray;
+    // background: $orange;
+    background: linear-gradient(to right, #e4c254, $orange);
     color: white;
     left: 0;
     right: 0;
@@ -9,6 +10,7 @@ footer {
     display: inline-block;
     width: 100%;
     ul {
+        font-size: 2rem;
         display: flex;
         color: white;
         justify-content: center;
@@ -16,21 +18,38 @@ footer {
             list-style-type: none;
             margin-right: 0.5%;
             &:first-child {
-                margin-right: 1%;
+                margin-right: 2%;
+            }
+            &:nth-child(2) {
+                a {
+                    i {
+                        color: $magenta;
+                        transition: all 0.3s ease;
+                        &:hover {
+                            color: $email-hover;
+                        }
+                    }
+                }
             }
             &:nth-child(3) {
                 a {
-                    transition: all 0.3s ease;
-                    &:hover {
+                    i {
                         color: $linkedin-blue;
+                        transition: all 0.3s ease;
+                        &:hover {
+                            color: $linkedIn-hover;
+                        }
                     }
                 }
             }
             &:nth-child(4) {
                 a {
-                    transition: all 0.3s ease;
-                    &:hover {
+                    i {
                         color: $github-black;
+                        transition: all 0.3s ease;
+                        &:hover {
+                            color: $github-hover;
+                        }
                     }
                 }
             }
@@ -43,6 +62,8 @@ footer {
     }
     p {
         text-align: center;
-        font-size: 15px;
+        font-size: 12px;
+        position: relative;
+        top: 11px;
     }
 }

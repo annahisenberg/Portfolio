@@ -11,7 +11,7 @@ import Redux from './icons/redux';
 import Sass from './icons/sass';
 import Travis from './icons/travis';
 
-export default function Lightbox(props) {
+export default function Lightbox1(props) {
     return (
         <section id="lightbox" onClick={() => props.onClick()} >
             <section id="lightbox-content">
