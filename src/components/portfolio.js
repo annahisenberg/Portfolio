@@ -11,10 +11,7 @@ export default class Portfolio extends Component {
         this.state = {
             showLightbox1: false,
             showLightbox2: false,
-            showLightbox3: false,
-            isHovering1: false,
-            isHovering2: false,
-            isHovering3: false
+            showLightbox3: false
         }
     }
     showLightbox1() {
@@ -43,36 +40,6 @@ export default class Portfolio extends Component {
         })
     }
 
-    handleMouseHover1() {
-        this.setState(this.toggleHover1State);
-    }
-
-    toggleHover1State(state) {
-        return {
-            isHovering1: !state.isHovering1
-        }
-    }
-
-    handleMouseHover2() {
-        this.setState(this.toggleHover2State);
-    }
-
-    toggleHover2State(state) {
-        return {
-            isHovering2: !state.isHovering2
-        }
-    }
-
-    handleMouseHover3() {
-        this.setState(this.toggleHover3State);
-    }
-
-    toggleHover3State(state) {
-        return {
-            isHovering3: !state.isHovering3
-        }
-    }
-
     render() {
         return (
             <section id="portfolio">
@@ -84,26 +51,29 @@ export default class Portfolio extends Component {
                     <section
                         className="card"
                         onClick={() => this.showLightbox1()}
-                        onMouseEnter={() => this.handleMouseHover1()}
-                        onMouseLeave={() => this.handleMouseHover1()}
                     >
                         <img src={Blog} alt="" />
+                        <div class="container">
+                            <h4>Living with Annah</h4>
+                        </div>
                         <div class="overlay"></div>
                     </section>
                     <section className="card"
                         onClick={() => this.showLightbox2()}
-                        onMouseEnter={() => this.handleMouseHover2()}
-                        onMouseLeave={() => this.handleMouseHover2()}
                     >
                         <img src={Blog} alt="" />
+                        <div class="container">
+                            <h4>The Foodie Diaries</h4>
+                        </div>
                         <div class="overlay"></div>
                     </section>
                     <section className="card"
                         onClick={() => this.showLightbox3()}
-                        onMouseEnter={() => this.handleMouseHover3()}
-                        onMouseLeave={() => this.handleMouseHover3()}
                     >
                         <img src={ProjectPic} alt="" />
+                        <div class="container">
+                            <h4>Animal Shelter Finder</h4>
+                        </div>
                         <div class="overlay"></div>
                     </section>
                 </div>

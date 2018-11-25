@@ -14,8 +14,6 @@
         left: -10%;
     }
     div {
-        // @include desktop {
-        // }
         display: flex;
         justify-content: space-evenly;
         .skill-item {
@@ -34,5 +32,8 @@ h2 {
 }
 
 svg {
-    width: 7%;
+    width: 12%;
+    @include desktop {
+        width: 6%;
+    }
 }

@@ -22,7 +22,7 @@ export default class Nav extends Component {
             <nav>
                 <h2>A<span>I</span></h2>
                 <ul>
-                    <li onClick={() => this.scrollToAbout()}>ABOUT ME</li>
+                    <li onClick={() => this.scrollToAbout()}>ABOUT</li>
                     <li onClick={() => this.scrollToSkills()}>SKILLS</li>
                     <li onClick={() => this.scrollToPortfolio()}>PORTFOLIO</li>
                     <li onClick={() => this.scrollToContact()}>CONTACT</li>

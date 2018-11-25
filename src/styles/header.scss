@@ -3,24 +3,56 @@ canvas {
     background: radial-gradient(#41135a, #130033); //#41135a
 }
 
-h1 {
-    position: absolute;
-    font-size: 50px;
-    left: 500px;
-    top: 300px;
-    color: white;
-    z-index: 1;
-    font-family: $header-font;
+header {
+    position: relative;
+    section {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 100;
+        font-family: $header-font;
+        font-weight: 100;
+        font-size: 1rem;
+        color: white;
+        @include desktop {
+            font-size: 2rem;
+        }
+    }
 }
 
-h3 {
-    position: absolute;
-    font-size: 50px;
-    left: 558px;
-    top: 353px;
-    color: white;
-    z-index: 1;
-    font-family: $header-font;
-    font-weight: 100;
-    font-size: 2rem;
+.typewriter h3 {
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .10em;
+    /* Adjust as needed */
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+}
+
+
+/* The typewriter cursor effect */
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent
+    }
+    50% {
+        border-color: orange;
+    }
 }

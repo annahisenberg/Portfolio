@@ -17,12 +17,17 @@
     }
     span {
         color: $darker-purple;
-        font-size: 15px;
+        font-size: 2rem;
+        border: 1px solid black;
         cursor: pointer;
         position: relative;
-        left: 29%;
+        left: 46%;
         -webkit-transition: 0.3s ease;
         transition: 0.3s ease;
+        padding: 0 5px 0 5px;
+        @include desktop {
+            left: 48.5%;
+        }
         &:hover {
             background: $darker-purple;
             color: white;

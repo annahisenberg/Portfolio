@@ -8,3 +8,11 @@
 @import './footer.scss';
 @import './portfolio.scss';
 @import './lightbox.scss';
+canvas {
+    width: 100%
+}
+
+nav {
+    position: relative;
+    overflow-x: hidden;
+}

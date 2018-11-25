@@ -4,9 +4,30 @@ export default class Header extends Component {
     componentDidMount() {
         let canvas = document.querySelector('canvas');
         // canvas.width = window.innerWidth;
-        canvas.width = 1440;
+        const PARENT_WIDTH = canvas.width = 1440;
         // canvas.height = window.innerHeight;
-        canvas.height = 500;
+        let PARENT_HEIGHT = 500;
+
+        window.addEventListener('resize', () => {
+            if (window.innerWidth <= 600) {
+                canvas.height = 900
+                PARENT_HEIGHT = 900
+            } else {
+                canvas.height = 500
+                PARENT_HEIGHT = 500
+            }
+        })
+
+        window.addEventListener('load', () => {
+            if (window.innerWidth <= 600) {
+                canvas.height = 900
+                PARENT_HEIGHT = 900
+            } else {
+                canvas.height = 500
+                PARENT_HEIGHT = 500
+            }
+        })
+
 
         const colors = ['#5C37D4', '#1f083e', '#605ba5']
         var randomColor = colors[Math.floor(Math.random() * colors.length)];
@@ -29,11 +50,11 @@ export default class Header extends Component {
             }
 
             this.update = function () {
-                if (this.x + this.radius > 1440 || this.x - this.radius < 0) {
+                if (this.x + this.radius > PARENT_WIDTH || this.x - this.radius < 0) {
                     this.dx = -this.dx;
                 }
 
-                if (this.y + this.radius > 500 || this.y - this.radius < 0) {
+                if (this.y + this.radius > PARENT_HEIGHT || this.y - this.radius < 0) {
                     this.dy = -this.dy;
                 }
 
@@ -50,8 +71,8 @@ export default class Header extends Component {
         //for loop creates a bunch of random circles
         for (let i = 0; i < 70; i++) {
             var radius = Math.random() * 20;
-            var x = Math.random() * (1440 - radius * 2) + radius;
-            var y = Math.random() * (500 - radius * 2) + radius;
+            var x = Math.random() * (PARENT_WIDTH - radius * 2) + radius;
+            var y = Math.random() * (PARENT_HEIGHT - radius * 2) + radius;
             var dx = (Math.random() - 0.5);
             var dy = (Math.random() - 0.5);
             var color = colors[Math.floor(Math.random() * colors.length)];
@@ -61,7 +82,7 @@ export default class Header extends Component {
 
         function animate() {
             requestAnimationFrame(animate);
-            c.clearRect(0, 0, 1440, 500);
+            c.clearRect(0, 0, PARENT_WIDTH, PARENT_HEIGHT);
 
             for (let i = 0; i < circleArray.length; i++) {
                 circleArray[i].update();
@@ -73,8 +94,10 @@ export default class Header extends Component {
         return (
             <header>
                 <canvas></canvas>
-                <h1>ANNAH ISENBERG</h1>
-                <h3>Full-Stack Developer</h3>
+                <section className="typewriter">
+                    <h1>ANNAH ISENBERG</h1>
+                    <h3>Full-Stack Developer</h3>
+                </section>
             </header>
         )
     }
