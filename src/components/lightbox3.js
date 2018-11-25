@@ -14,7 +14,7 @@ export default function Lightbox3(props) {
                 <span class="close cursor" onClick={() => props.onClick()}>&times;</span>
                 <h2>Animal Shelter Finder</h2>
                 <hr></hr>
-                <img src={ProjectPic} alt="" />
+                <img src={ProjectPic} alt="animal-shelter-project-pic" />
                 <h4>Project Brief</h4>
                 <p>Living With Annah is a personal lifestyle blog I created for myself. I use it to blog about my daily life.</p>
                 <button><a href="https://annahisenberg.github.io/Animal-shelter-finder/" target="_blank">Live Demo</a></button>

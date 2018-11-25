@@ -1,17 +1,25 @@
 #about {
+    margin: 1rem;
     @include desktop {
         display: flex;
-        padding: 6rem 14rem;
     }
     img {
         border-radius: 50%;
-        width: 25%;
-        height: 25%;
+        width: 38%;
+        height: 38%;
         display: block;
         margin: auto;
+        @include desktop {
+            width: 23%;
+        }
     }
     div {
         margin-left: 4rem;
+        ul {
+            margin: 0;
+            padding: 0;
+            margin-right: 4.5rem;
+        }
         h2 {
             color: $magenta;
         }

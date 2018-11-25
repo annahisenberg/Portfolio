@@ -14,11 +14,14 @@
     h4 {
         color: $orange;
         padding-top: 2%;
+        font-weight: 900;
+        margin-top: 0;
     }
     span {
-        color: $darker-purple;
+        background: $darker-purple;
+        color: white;
         font-size: 2rem;
-        border: 1px solid black;
+        border: 1px solid $darker-purple;
         cursor: pointer;
         position: relative;
         left: 46%;
@@ -29,8 +32,8 @@
             left: 48.5%;
         }
         &:hover {
-            background: $darker-purple;
-            color: white;
+            background: white;
+            color: $darker-purple;
         }
     }
     #lightbox-content {
@@ -50,9 +53,11 @@
         }
         button {
             background: $orange;
+            margin: 0 1rem;
+            font-weight: 700;
             border-radius: 1rem;
             font-size: 15px;
-            padding: 0.8%;
+            padding: .5rem 1rem;
             border: none;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
             transition: 0.3s linear;

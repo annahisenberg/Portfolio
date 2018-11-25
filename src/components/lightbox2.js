@@ -18,8 +18,8 @@ export default function Lightbox2(props) {
                 <hr></hr>
                 <h4>Project Brief</h4>
                 <p>Living With Annah is a personal lifestyle blog I created for myself. I use it to blog about my daily life.</p>
-                <button><a href="https://immense-ridge-55909.herokuapp.com/api/Home">Live Demo</a></button>
-                <button><a href="https://github.com/annahisenberg/food-diary-node">Source Code</a></button>
+                <button><a href="https://immense-ridge-55909.herokuapp.com/api/Home" target="_blank">Live Demo</a></button>
+                <button><a href="https://github.com/annahisenberg/food-diary-node" target="_blank">Source Code</a></button>
                 <h4>Made with:</h4>
                 <div>
                     <Css />

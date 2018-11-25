@@ -5,24 +5,19 @@
         color: $magenta;
     }
     div {
-        display: flex;
-        justify-content: space-evenly;
+        @include desktop {
+            display: flex;
+            justify-content: space-evenly;
+        }
     }
 }
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 26%;
-    position: relative;
     transition: all 0.3s ease;
-    button {
-        position: absolute;
-        bottom: 84px;
-        left: 138px;
-        z-index: 9999;
-        border-radius: 50%;
-        width: 100px;
-        height: 100px;
+    margin-bottom: 2rem;
+    @include desktop {
+        max-width: 26%;
     }
     img {
         max-width: 100%;

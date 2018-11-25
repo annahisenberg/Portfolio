@@ -1,6 +1,5 @@
 footer {
     margin-top: 6%;
-    // background: $orange;
     background: linear-gradient(to right, #e4c254, $orange);
     color: white;
     left: 0;
@@ -11,6 +10,8 @@ footer {
     width: 100%;
     ul {
         font-size: 2rem;
+        margin: 0;
+        padding: 0;
         display: flex;
         color: white;
         justify-content: center;
@@ -18,9 +19,6 @@ footer {
             list-style-type: none;
             margin-right: 0.5%;
             &:first-child {
-                margin-right: 2%;
-            }
-            &:nth-child(2) {
                 a {
                     i {
                         color: $magenta;
@@ -31,7 +29,7 @@ footer {
                     }
                 }
             }
-            &:nth-child(3) {
+            &:nth-child(2) {
                 a {
                     i {
                         color: $linkedin-blue;
@@ -42,7 +40,7 @@ footer {
                     }
                 }
             }
-            &:nth-child(4) {
+            &:nth-child(3) {
                 a {
                     i {
                         color: $github-black;

@@ -33,7 +33,9 @@ h2 {
 
 svg {
     width: 12%;
+    margin: 0 0.5rem;
     @include desktop {
         width: 6%;
+        margin: 0;
     }
 }
