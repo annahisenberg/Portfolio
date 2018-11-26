@@ -5,6 +5,10 @@ canvas {
 
 header {
     position: relative;
+    margin-top: 17%;
+    @include desktop {
+        margin-top: 0;
+    }
     section {
         position: absolute;
         top: 50%;

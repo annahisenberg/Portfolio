@@ -1,6 +1,7 @@
 nav {
+    position: fixed;
+    width: 100%;
     display: flex;
-    position: sticky;
     top: 0;
     background: white;
     z-index: 9999;
@@ -10,6 +11,7 @@ nav {
     height: 4rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     @include desktop {
+        position: sticky;
         padding: 0 3rem;
     }
     h2 {
@@ -33,6 +35,7 @@ nav {
         list-style-type: none;
         justify-content: flex-end;
         font-size: 0.9rem;
+        margin-right: 5%;
         @include desktop {
             font-size: 1.2rem;
         }
