@@ -4,6 +4,7 @@ import Lightbox1 from './lightbox1';
 import Lightbox2 from './lightbox2';
 import Lightbox3 from './lightbox3';
 import ProjectPic from '../pictures/animalshelterpic.png';
+import FoodDiary from '../pictures/fooddiary.png';
 
 export default class Portfolio extends Component {
     constructor() {
@@ -52,16 +53,16 @@ export default class Portfolio extends Component {
                         className="card"
                         onClick={() => this.showLightbox1()}
                     >
-                        <img src={Blog} alt="" />
+                        <img src={Blog} alt="blog picture" />
                         <div class="container">
-                            <h4>Living with Annah</h4>
+                            <h4>Every Cook and Cranny</h4>
                         </div>
                         <div class="overlay"></div>
                     </section>
                     <section className="card"
                         onClick={() => this.showLightbox2()}
                     >
-                        <img src={Blog} alt="" />
+                        <img src={FoodDiary} alt="food diary picture" />
                         <div class="container">
                             <h4>The Foodie Diaries</h4>
                         </div>
@@ -70,7 +71,7 @@ export default class Portfolio extends Component {
                     <section className="card"
                         onClick={() => this.showLightbox3()}
                     >
-                        <img src={ProjectPic} alt="" />
+                        <img src={ProjectPic} alt="Animal Shelter Finder picture" />
                         <div class="container">
                             <h4>Animal Shelter Finder</h4>
                         </div>

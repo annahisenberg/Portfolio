@@ -8,6 +8,7 @@ import Mongo from './icons/mongo';
 import Node from './icons/node';
 import Travis from './icons/travis';
 import Jquery from './icons/jquery';
+import FoodDiary from '../pictures/fooddiary.png';
 
 export default function Lightbox2(props) {
     return (
@@ -16,6 +17,7 @@ export default function Lightbox2(props) {
                 <span class="close cursor" onClick={() => props.onClick()}>&times;</span>
                 <h2>The Foodie Diaries</h2>
                 <hr></hr>
+                <img src={FoodDiary} alt="food-diary-project-pic" />
                 <h4>Project Brief</h4>
                 <p>Living With Annah is a personal lifestyle blog I created for myself. I use it to blog about my daily life.</p>
                 <button><a href="https://immense-ridge-55909.herokuapp.com/api/Home" target="_blank">Live Demo</a></button>

@@ -22,7 +22,7 @@ export default function Lightbox1(props) {
                 <img src={Blog} alt="blog-pic" />
                 <h4>Project Brief</h4>
                 <p>Every Cook and Cranny is a personal lifestyle blog I created for myself. I use it to blog about my daily life.</p>
-                <button>Live Demo</button>
+                <button><a href="https://aqueous-springs-80005.herokuapp.com/">Live Demo</a></button>
                 <button><a href="https://github.com/annahisenberg/react-capstone-client" target="_blank">Source Code</a></button>
                 <h4>Made with:</h4>
                 <div>

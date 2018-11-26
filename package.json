@@ -9,6 +9,7 @@
     },
     "scripts": {
         "start": "react-scripts start",
+        "aws:Deploy": "aws s3 cp ./build/ s3://annahisenberg.com/ --recursive",
         "compile:sass": "node-sass  --include-path scss ./src/styles/main.scss ./src/index.css  -w --source-map-embed true ",
         "build": "react-scripts build",
         "test": "react-scripts test",
